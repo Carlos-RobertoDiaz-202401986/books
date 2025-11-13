@@ -1,0 +1,19 @@
+﻿<table class="table" style="background:grey;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var autor in Model)
+        {
+            <tr>
+                <td>@autor.Id</td>
+                <td>@autor.FirstName</td>
+                <td>@autor.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
